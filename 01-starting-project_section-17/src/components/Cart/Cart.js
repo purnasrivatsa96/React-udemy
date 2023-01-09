@@ -42,6 +42,8 @@ const Cart = (props) => {
     setIsSubmitting(false);
     setDidSubmit(true);
     cartCtx.clearCart();
+    console.log(isSubmitting);
+    console.log(didSubmit);
   };
 
   const cartItems = (
@@ -98,6 +100,9 @@ const Cart = (props) => {
       </div>
     </React.Fragment>
   );
+
+  console.log(isSubmitting);
+  console.log(didSubmit);
 
   return (
     <Modal onClose={props.onClose}>
