@@ -8,6 +8,7 @@ export const fetchCartData = () => {
         "https://react-http-b53cd-default-rtdb.firebaseio.com/cart.json"
       );
       if (!response.ok) {
+        console.log(response);
         throw new Error("Could not fetch cart data!");
       }
 
